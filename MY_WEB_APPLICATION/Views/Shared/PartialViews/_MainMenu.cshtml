@@ -1,0 +1,23 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			@Html.ActionLink("داریوش تصدیقی", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				@*<li><a href="~/Home/Index">خانه</a></li>
+					<li><a href="~/Home/About">درباره ما</a></li>
+					<li><a href="~/Home/Contact">تماس با ما</a></li>*@
+
+				<li>@(Html.ActionLink("خانه", MVC.Home.Index()))</li>
+				<li>@(Html.ActionLink("درباره ما", MVC.Home.About()))</li>
+				<li>@(Html.ActionLink("تماس با ما", MVC.Home.Contact()))</li>
+			</ul>
+		</div>
+	</div>
+</div>
